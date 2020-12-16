@@ -3,7 +3,7 @@ pipeline {
     agent { 
         docker { 
             image 'kroniak/ssh-client'
-            args "-e HOME=${JENKINS_HOME}"
+            args '-v /etc/passwd:/etc/passwd:ro'
         } 
     }
     environment {
