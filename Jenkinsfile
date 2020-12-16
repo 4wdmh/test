@@ -1,6 +1,11 @@
 pipeline {
     //agent { docker { image 'python:3.5.1' } }
-    agent { docker { image 'kroniak/ssh-client' } }
+    agent { 
+        docker { 
+            image 'kroniak/ssh-client'
+            args "-e HOME=${JENKINS_HOME}"
+        } 
+    }
     environment {
         // The MY_KUBECONFIG environment variable will be assigned
         // the value of a temporary file.  For example:
