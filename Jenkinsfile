@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
-                sh 'ls'
+                sh 'ls '
                 sh 'pwd'
                 sh 'ls /var/lib/jenkins/workspace/pipeline_main'
             }
