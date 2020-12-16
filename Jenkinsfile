@@ -1,5 +1,6 @@
 pipeline {
-    agent { docker { image 'python:3.5.1' } }
+    //agent { docker { image 'python:3.5.1' } }
+    agent { docker { image 'kroniak/ssh-client' } }
     environment {
         // The MY_KUBECONFIG environment variable will be assigned
         // the value of a temporary file.  For example:
@@ -10,7 +11,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
+                //sh 'python --version'
                 sh 'ls '
                 sh 'pwd'
                 sh 'ls /var/lib/jenkins/workspace/pipeline_main'
