@@ -21,7 +21,8 @@ pipeline {
                 sh 'pwd'
                 sh 'ls /var/lib/jenkins/workspace/pipeline_main'
                 //sh '/usr/bin/ssh'
-                sh '/usr/bin/ssh -i $MHOLLAI_SSH_KEY mhollai@192.168.42.242'
+                //sh '/usr/bin/ssh -i $MHOLLAI_SSH_KEY mhollai@192.168.42.242'
+                sh '/usr/bin/scp -i $MHOLLAI_SSH_KEY Jenkinsfile mhollai@192.168.42.242:/'
             }
         }
     }
