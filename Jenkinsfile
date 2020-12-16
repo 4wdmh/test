@@ -14,8 +14,8 @@ pipeline {
                 sh 'ls '
                 sh 'pwd'
                 sh 'ls /var/lib/jenkins/workspace/pipeline_main'
-                sh 'ssh -i $MHOLLAI_SSH_KEY mhollai@192.168.42.242'
                 sh 'ssh'
+                sh 'ssh -i $MHOLLAI_SSH_KEY mhollai@192.168.42.242'
             }
         }
     }
