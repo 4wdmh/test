@@ -7,6 +7,7 @@ pipeline {
                 sh 'ls '
                 sh 'pwd'
                 sh 'ls /var/lib/jenkins/workspace/pipeline_main'
+                sh 'ping -c 3 192.168.42.242'
             }
         }
     }
