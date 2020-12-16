@@ -5,7 +5,6 @@ pipeline {
             steps {
                 sh 'python --version'
                 sh 'ls'
-                sh 'echo \n\n'
                 sh 'pwd'
                 sh 'ls /var/lib/jenkins/workspace/pipeline_main'
             }
