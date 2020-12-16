@@ -3,7 +3,8 @@ pipeline {
     agent { 
         docker { 
             image 'kroniak/ssh-client'
-            args '-v /etc/passwd:/etc/passwd:ro'
+            args '-u root:root'
+            //args '-v /etc/passwd:/etc/passwd:ro'
         } 
     }
     environment {
