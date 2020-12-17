@@ -22,6 +22,8 @@ pipeline {
                 sh 'ls '
                 sh 'pwd'
                 sh 'ls /var/lib/jenkins/workspace/pipeline_main'
+                sh 'uname -a'
+                sh 'whoami'
                 //sh '/usr/bin/scp -i $MHOLLAI_SSH_KEY -o StrictHostKeyChecking=no Jenkinsfile mhollai@192.168.42.242:/home/mhollai'
             }
         }
