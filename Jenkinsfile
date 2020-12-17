@@ -1,9 +1,10 @@
 pipeline {
     //agent { docker { image 'python:3.5.1' } }
     agent { 
-        docker { 
-            image 'kroniak/ssh-client'
-            args '-u root:root'
+        any
+        //docker { 
+        //    image 'kroniak/ssh-client'
+        //    args '-u root:root'
             //args '-v /etc/passwd:/etc/passwd:ro'
         } 
     }
