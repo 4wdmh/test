@@ -19,6 +19,7 @@ pipeline {
         stage('build') {
             steps {
                 //sh 'python --version'
+                sh 'echo $(git rev-parse --abbrev-ref HEAD)'
                 sh 'ls '
                 sh 'pwd'
                 sh 'ls /var/lib/jenkins/workspace/pipeline_main'
