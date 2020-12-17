@@ -1,13 +1,13 @@
 pipeline {
     //agent { docker { image 'python:3.5.1' } }
-    agent { 
-        any
+    agent any 
+    //{ 
         //docker { 
         //    image 'kroniak/ssh-client'
         //    args '-u root:root'
             //args '-v /etc/passwd:/etc/passwd:ro'
         //} 
-    }
+    //}
     environment {
         // The MY_KUBECONFIG environment variable will be assigned
         // the value of a temporary file.  For example:
