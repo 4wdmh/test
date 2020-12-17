@@ -6,7 +6,7 @@ pipeline {
         //    image 'kroniak/ssh-client'
         //    args '-u root:root'
             //args '-v /etc/passwd:/etc/passwd:ro'
-        } 
+        //} 
     }
     environment {
         // The MY_KUBECONFIG environment variable will be assigned
